@@ -426,11 +426,11 @@ const Registration = () => {
                         </TLSection>
                     </FormContainer>
                     <ButtonGroup>
-                        {currentSection < 3 && (
-                            <Button onClick={handleNext}>Next</Button>
-                        )}
                         {currentSection > 0 && (
                             <Button onClick={handlePrevious}>Previous</Button>
+                        )}
+                        {currentSection < 3 && (
+                            <Button onClick={handleNext}>Next</Button>
                         )}
                         {currentSection === 3 && (
                             <Button onClick={uploadFileAndSubmit}>Submit</Button>
@@ -624,6 +624,7 @@ const RadioGroup = styled.div`
 
 const ButtonGroup = styled.div`
     display: flex;
+    align-self: center;
     justify-content: space-between;
 `;
 
