@@ -70,7 +70,7 @@ const Registration = () => {
     };
 
     const uploadFileAndSubmit = async () => {
-        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme', 'Abstract'];
+        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme'];
         const emptyFields = requiredFields.filter(field => !formData[field]);
 
         if (emptyFields.length > 0) {
