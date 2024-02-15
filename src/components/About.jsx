@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 // import LogoRevel from '../assets/ḶogoRevealLeo.mp4';
-import LogoRevel from '../assets/about.mp4';
+// import LogoRevel from '../assets/about.mp4';
+import LogoRevel from '../assets/about.gif';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -29,9 +30,10 @@ const About = () => {
             <Container>
                 <Left>
                     <ImageContainer>
-                        <Video ref={videoRef} loop muted>
+                        <img src={LogoRevel} alt="logo" />
+                        {/* <Video ref={videoRef} loop muted>
                             <source src={LogoRevel} type="video/mp4" />
-                        </Video>
+                        </Video> */}
                     </ImageContainer>
                 </Left>
                 <Right>
@@ -93,6 +95,13 @@ const ImageContainer = styled.div`
     border-radius: 10px;
     position: relative;
     box-shadow: -0px 0px 60px -12px #FD0000;
+
+    img{
+            width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    }
     @media screen and (max-width: 768px) {
         width: 280px;
         height: 350px;
