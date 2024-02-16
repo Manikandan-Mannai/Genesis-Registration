@@ -7,32 +7,57 @@ import abstract5 from './assets/Images/abstract_bg4.webp'
 export const ThemeData = [
     {
         id: 0,
-        Title: "Web Development",
+        Title: "Intelligent Automation",
         img: abstract1
     },
     {
         id: 0,
-        Title: "Web Development",
+        Title: "Green Technology",
         img: abstract2
     },
     {
         id: 1,
-        Title: "Web Development",
+        Title: "Disaster Management",
         img: abstract3
     },
     {
         id: 2,
-        Title: "Web Development",
+        Title: "Smart Drone & Robots",
         img: abstract4
     },
     {
         id: 3,
-        Title: "Web Development",
+        Title: "Health Technology",
         img: abstract5
     },
     {
         id: 4,
-        Title: "Web Development",
+        Title: "Security Surveillance",
+        img: abstract1
+    },
+    {
+        id: 5,
+        Title: "Smart Drone & Robots",
+        img: abstract2
+    },
+    {
+        id: 6,
+        Title: "Game Development",
+        img: abstract3
+    },
+    {
+        id: 7,
+        Title: "Security Surveillance",
+        img: abstract4
+    },
+    {
+        id: 8,
+        Title: "Waste To Wealth",
+        img: abstract5
+    },
+    {
+        id: 9,
+        Title: "Others",
         img: abstract1
     },
 ]

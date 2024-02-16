@@ -55,13 +55,15 @@ const FAQItem = styled.div`
 const Question = styled.div`
   background-color: #000;
   padding: 15px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 900;
   cursor: pointer;
   position: relative;
 `;
 
 const Answer = styled.div`
   padding: 15px;
+  font-weight: 300;
   display: ${({ visible }) => (visible ? 'block' : 'none')};
   border-top: 1px solid #fff;
 `;

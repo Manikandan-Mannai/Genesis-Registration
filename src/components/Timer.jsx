@@ -46,7 +46,6 @@ const Timer = () => {
                 <div>
                     <h2>Mark your <span>Calendar</span> </h2>
                     <p className='description'>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium Kriya 2024 !</p>
-                    <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjRzNjZwbGVwZTIwbTVqNGg0NXZpb2o1MGIgbWFubmFpbWFuaTQyNDJAbQ&tmsrc=mannaimani4242%40gmail.com" target="_blank" rel="noreferrer" className='calender-button'>Add to Calendar</a>
                 </div>
             </Left>
             <Right>

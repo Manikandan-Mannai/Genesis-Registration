@@ -144,6 +144,7 @@ const Section = styled.div`
   max-width: 100vw;
   z-index: 1;
   color: #fff;
+  margin-bottom: 4%;
   h1{
     text-align: center;
   }

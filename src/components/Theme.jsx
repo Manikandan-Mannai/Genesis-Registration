@@ -17,7 +17,7 @@ const Theme = () => {
 
   return (
     <Section>
-      <h1>THEME</h1>
+      <h1>THEMES</h1>
       <Container>
         <Right>
           <h1>Exciting Event Themes</h1>
@@ -84,6 +84,7 @@ const Card = styled.div`
 
   h4{
     position: absolute;
+    font-size: 22px;
   }
 `;
 

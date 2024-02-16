@@ -72,7 +72,7 @@ const Container = styled.div`
     border-radius: 10px;
     display: flex;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #8F8F8F;
     justify-content: space-between;
     @media screen and (max-width: 768px) {
         padding: 20px;
@@ -94,7 +94,7 @@ const ImageContainer = styled.div`
     height: 400px;
     border-radius: 10px;
     position: relative;
-    box-shadow: -0px 0px 60px -12px #FD0000;
+    /* box-shadow: -0px 0px 60px -12px #FD0000; */
 
     img{
             width: 100%;
@@ -108,13 +108,6 @@ const ImageContainer = styled.div`
         margin: auto;
         margin-bottom: 10px;
     }
-    `;
-
-const Video = styled.video`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
     `;
 
 const Right = styled.div`

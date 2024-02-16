@@ -160,12 +160,17 @@ const Registration = () => {
     ];
 
     const ThemeOptions = [
-        'Select',
-        "Web development",
-        "AI",
-        "Machine Learning",
-        "Blockchain",
-        "Others"
+        "Intelligent Automation",
+        "Green Technology",
+        "Disaster Management",
+        "Smart Drone & Robots",
+        "Health Technology",
+        "Security Surveillance",
+        "Smart Drone & Robots",
+        "Game Development",
+        "Security Surveillance",
+        "Waste To Wealth",
+        "Others",
     ];
 
     const Year = [
@@ -255,7 +260,7 @@ const Registration = () => {
                                                 checked={formData.TLHostelDays === 'Hostel'}
                                                 onChange={handleRadioChange}
                                             />
-                                            Hostel
+                                            Hosteller
                                         </label>
                                         <label>
                                             <Input
@@ -569,13 +574,19 @@ const Input = styled.input`
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-`;
+    background-color: #444;
+    color: #fff;
+    background-color: #444;
+    color: #fff;
+    `;
 
 const Select = styled.select`
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #444;
+    color: #fff;
 `;
 
 const Button = styled.button`
@@ -622,10 +633,21 @@ const RadioGroup = styled.div`
     }
 `;
 
+// const ButtonGroup = styled.div`
+//     display: flex;
+//     align-self: center;
+//     justify-content: space-between;
+// `;
+
 const ButtonGroup = styled.div`
     display: flex;
     align-self: center;
-    justify-content: space-between;
+    justify-content: flex-end; /* Adjusted from space-between to flex-end */
+    gap: 69%;
+    @media screen and (max-width: 768px) {
+        gap: 10%;
+        justify-content: center; /* Keep space-between for smaller screens if needed */
+    }
 `;
 
 

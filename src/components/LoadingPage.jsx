@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 
 const LoadingPage = () => {
 
-
   useEffect(() => {
     AOS.init({ duration: 1500 })
   }, [])
@@ -37,16 +36,28 @@ const Container = styled.div`
   color: #ffffff;
   text-align: center;
   width: 100%;
-  .small{
+
+  .small {
     font-size: 32px;
+    font-family: "Rethink Sans", sans-serif;
   }
-  .depart{
+  
+  .depart {
     font-size: 72px !important;
-    font-family: "League Spartan";
+    /* font-family: "League Spartan"; */
+    font-weight: 800;
+    font-family: "Rethink Sans", sans-serif;
     color: #FD0000;
   }
+
   h2 {
     font-size: 52px;
     margin: 3rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .depart {
+      font-size: 48px !important; 
+    }
   }
 `;

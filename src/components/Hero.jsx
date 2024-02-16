@@ -11,7 +11,7 @@ const Hero = () => {
                 <source src={video} type="video/webm" />
             </VideoBackground> */}
             <div>
-                <img src={video} />
+                <img src={video} alt='video'/>
             </div>
         </HeroSection>
     );
@@ -37,12 +37,12 @@ const HeroSection = styled.div`
     }
 `;
 
-const VideoBackground = styled.video`
-    object-fit: contain; /* Ensure the video fits within the container */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-`;
+// const VideoBackground = styled.video`
+//     object-fit: contain; /* Ensure the video fits within the container */
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+// `;

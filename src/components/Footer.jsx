@@ -35,7 +35,7 @@ const Footer = () => {
         </RightSection>
       </FlexBox>
       <Copyright>
-        Developed by XYZ.
+        <a href="https://blog-application-16fb6.web.app/" target='_blank' rel="noreferrer" className='shine'>Developed by Manikandan ⚡</a>
       </Copyright>
     </StyledFooter>
   );
@@ -172,7 +172,6 @@ const ContactText = styled.span`
     font-weight: 300;
   }
   `;
-
 const Copyright = styled.div`
   position: relative;
   font-size: 14px;
@@ -181,5 +180,5 @@ const Copyright = styled.div`
   
   @media (min-width: 768px) {
     text-align: right;
-  }
+ }
 `;
