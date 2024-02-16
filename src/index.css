@@ -25,6 +25,7 @@ body {
   transition: all 300ms ease-in;
 }
 
+
 @font-face {
   font-family: 'Compacta Std Bold';
   src: url('../public/CompactaStdBold/Compacta\ Std\ Bold.otf') format('truetype');

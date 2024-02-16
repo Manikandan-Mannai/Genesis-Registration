@@ -111,7 +111,7 @@ const Right = styled.div`
     align-items: start;
     margin-top: 30%;
     background: #ffffff;
-    background: linear-gradient(to bottom, #ffffff 20%, #000000 100%);
+    background: linear-gradient(to bottom, #ffffff 60%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

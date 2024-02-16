@@ -88,7 +88,10 @@ const Registration = () => {
             return;
         }
 
-        const pdfRef = ref(storage, `Abstracts/${fileUpload.name}`);
+        const fileName = `${formData.TLName} - ${formData.TLYear}.pdf`;
+
+        const pdfRef = ref(storage, `Abstracts/${fileName}`);
+
         try {
             setLoading(true);
             const snapshot = await uploadBytes(pdfRef, fileUpload);
@@ -570,6 +573,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
+    /* width: 150px; */
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;

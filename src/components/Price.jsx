@@ -21,7 +21,7 @@ const Price = () => {
                     <Card>
                         <Prize >
                             <div className='gold'>
-                                <h2>1st Prize</h2>
+                                <h2>1<sup>st</sup> Prize</h2>
                                 <p>₹5,000</p>
                             </div>
                         </Prize>
@@ -29,7 +29,7 @@ const Price = () => {
                     <Card>
                         <Prize >
                             <div className='gold'>
-                                <h2>2nd Prize</h2>
+                                <h2>2<sup>nd</sup> Prize</h2>
                                 <p>₹3,000</p>
                             </div>
                         </Prize>
@@ -37,7 +37,7 @@ const Price = () => {
                     <Card>
                         <Prize>
                             <div className='gold'>
-                                <h2>3rd Prize</h2>
+                                <h2>3<sup>rd</sup> Prize</h2>
                                 <p>₹2,000</p>
                             </div>
                         </Prize>
@@ -140,6 +140,9 @@ const Prize = styled.div`
     background-size: 200%;
     background-position: left;
 
+}
+sup{
+    text-transform: lowercase;
 }
 @keyframes shine {
   to{background-position: right}
