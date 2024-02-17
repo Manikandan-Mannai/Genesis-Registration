@@ -72,8 +72,8 @@ export const faqData = [
         answer: " Laptops, Hardware components(if any). Also you can bring any of your personal requirements as your wish. The food and refreshment snacks will be provided in the hackathon itself.",
     },
     {
-        question: "How can I apply?",
-        answer: "The registration would be simply done by just clicking the register button and filling up a google form in which you would have to mention you and your team details. Registrations end on 15th Feb 2023",
+        question: "Can my team submit multiple abstracts?",
+        answer: "Yes , a single team can submit multiple ideas.",
     },
     {
         question: "What if I don't know how to code?",
@@ -82,5 +82,13 @@ export const faqData = [
     {
         question: "What are the criteria of shortlisting the teams?",
         answer: "Based on the innovative ideas. The creative thoughts of the abstract which could unleash the power to solve the realtime problems. The abstract should comes under the given themes.",
+    },
+    {
+        question: "Can a student be part of multiple teams?",
+        answer: "A student can strictly be part of only one team",
+    },
+    {
+        question: "Will accommodation and food be provided for Day Scholars?",
+        answer: "Food and Accommodation for refreshments will be provided for Day Scholars",
     },
 ];

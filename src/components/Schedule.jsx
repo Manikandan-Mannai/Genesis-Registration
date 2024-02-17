@@ -23,28 +23,22 @@ const Schedule = () => {
                         <p>STEP</p>
                         <img src={One} alt="One" />
                         <h3>Registration</h3>
-                        <p>Register and Submit your idea</p>
+                        <p>Team registration and Abstract Submission <br />
+                            <span>Last Date  : 5th March</span></p>
                     </Card>
                     <ArrowImage src={Arrow} />
                     <Card>
                         <p>STEP</p>
                         <img src={Two} alt="Two" />
-                        <h3>Short Listing</h3>
-                        <p>Teams will be shortlisted for Hackathon</p>
+                        <h3>SHORTLISTING</h3>
+                        <p>Final Teams will be shortlisted based on their abstract and a preliminary review</p>
                     </Card>
                     <ArrowImage src={Arrow} />
                     <Card>
                         <p>STEP</p>
                         <img src={Three} alt="Three" />
                         <h3>Hackathon</h3>
-                        <p>Participate in the hackathon</p>
-                    </Card>
-                    <ArrowImage src={Arrow} />
-                    <Card>
-                        <p>STEP</p>
-                        <img src={Four} alt="Three" />
-                        <h3>Validation</h3>
-                        <p> validated based on their projects to our aluminis</p>
+                        <p>Final Round of Intensive 30 Hour Hackathon with four review checkpoints</p>
                     </Card>
                 </CardContainer>
             </Container>
@@ -92,6 +86,10 @@ const CardContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto; 
+    span{
+        font-weight: 600;
+        color: #FD0000;
+    }
     .left{
         transform: rotate(180deg);
     }
@@ -104,9 +102,9 @@ const CardContainer = styled.div`
 `
 
 const Card = styled.div`
-    min-width: 180px;
-    width: 150px;
-    height: 220px;
+    /* min-width: 180px; */
+    width: 200px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;

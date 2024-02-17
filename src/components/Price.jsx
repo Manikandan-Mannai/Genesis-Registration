@@ -13,9 +13,7 @@ const Price = () => {
             <Container>
                 <h1 >PRIZES AND AWARDS</h1>
                 <h3>
-                    Cash prizes worth ₹10,000/-
-                    Also, individuality prizes will be given for the best performing individuals and many more surprising gifts and prizes.
-                    Honored with secret titles based on the participants' performance.
+                    Top 3 teams will be awarded from a prize pool of ₹10,000. In addition there are many exciting and surprise gifts. Teams performance will be evaluated and judged by experienced professionals from the industry.
                 </h3>
                 <CardContainer>
                     <Card>

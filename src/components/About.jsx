@@ -39,7 +39,7 @@ const About = () => {
                 <Right>
                     <h2>GENESIS</h2>
                     <Line />
-                    <p>"GENESIS" is the 30-hour Intra College Hackathon by Department of Computer Science and Engineering. Experience the upgraded edition, bigger and bolder than ever before, continuing the legacy of Agnitioz. Showcase your talent, push your limits, compete and be recognized as the next generation of KNCET's Tech Leaders. Register and join us for the most awaited event of the year.</p>
+                    <p>"GENESIS" is the 30-hour Intra College Hackathon organized by Department of Computer Science and Engineering. It also represents Gathering Engineers for Networking, Education, and Software Innovation Showcase. Experience the upgraded edition, bigger and bolder than ever before, continuing the legacy of Agnitioz. Our mission with "Genesis" is simple yet profound - to foster a culture of innovation and excellence within our academic community.  Showcase your talent, push your limits, compete against the best and be recognized as the next generation of KNCET's Tech Leaders. Register and join us for the most awaited event of the year.</p>
                 </Right>
             </Container>
         </Section>
@@ -73,7 +73,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     border: 1px solid #8F8F8F;
-    justify-content: space-between;
+    justify-content: space-around;
     @media screen and (max-width: 768px) {
         padding: 20px;
         border: none;
@@ -97,10 +97,10 @@ const ImageContainer = styled.div`
     /* box-shadow: -0px 0px 60px -12px #FD0000; */
 
     img{
-            width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
     }
     @media screen and (max-width: 768px) {
         width: 280px;
@@ -116,6 +116,9 @@ const Right = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    p{
+        text-align: justify;
+    }
     @media screen and (max-width: 768px) {
         flex-basis: 100%;
     }

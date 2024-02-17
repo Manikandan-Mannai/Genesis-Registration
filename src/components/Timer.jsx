@@ -45,7 +45,7 @@ const Timer = () => {
             <Left>
                 <div>
                     <h2>Mark your <span>Calendar</span> </h2>
-                    <p className='description'>Join us at the forefront of technological advancements and gain valuable insights at our upcoming technical symposium Kriya 2024 !</p>
+                    <p className='description'>Join us for an unforgettable celebration of technology, creativity, collaboration and community. GENESIS - where the future begins!</p>
                 </div>
             </Left>
             <Right>
