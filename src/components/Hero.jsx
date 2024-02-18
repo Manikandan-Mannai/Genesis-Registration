@@ -10,8 +10,9 @@ const Hero = () => {
             {/* <VideoBackground autoPlay loop muted>
                 <source src={video} type="video/webm" />
             </VideoBackground> */}
-            <div>
+            <div className='parent'>
                 <img src={video} alt='video' />
+                {/* <div class="mouse"></div> */}
             </div>
         </HeroSection>
     );
@@ -34,23 +35,29 @@ const HeroSection = styled.div`
     top: 0;
     left: 0;
     z-index: 1;
-    }
+}
 
-    .mouse {
-	width: 50px;
-	height: 90px;
-	border: 3px solid #333;
-	border-radius: 60px;
-	position: relative;
+
+
+.mouse {
+    z-index: 999;
+    width: 40px;
+    height: 70px;
+    border: 3px solid #FD0000;
+    border-radius: 60px;
+	position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-100%);
 	&::before {
-		content: '';
+        content: '';
 		width: 12px;
 		height: 12px;
 		position: absolute;
 		top: 10px;
 		left: 50%;
 		transform: translateX(-50%);
-		background-color: #333;
+		background-color: #FD0000;
 		border-radius: 50%;
 		opacity: 1;
 		animation: wheel 2s infinite;
@@ -70,6 +77,10 @@ const HeroSection = styled.div`
 		opacity: 0;
 		top: 60px;
 	}
+}
+
+@media screen and (max-width:768px){
+    height: 50vh;
 }
 
 `;
