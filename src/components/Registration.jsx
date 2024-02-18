@@ -49,6 +49,7 @@ const Registration = () => {
         TeamName: '',
         Title: '',
         Theme: '',
+        College: '',
     });
 
     const [fileUpload, setFileUpload] = useState(null);
@@ -70,7 +71,7 @@ const Registration = () => {
     };
 
     const uploadFileAndSubmit = async () => {
-        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme'];
+        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme','College'];
         const emptyFields = requiredFields.filter(field => !formData[field]);
 
         if (emptyFields.length > 0) {
@@ -137,6 +138,7 @@ const Registration = () => {
                     TeamName: '',
                     Title: '',
                     Theme: '',
+                    College: '',
                 });
                 setLoading(false);
             } else {
@@ -176,6 +178,10 @@ const Registration = () => {
         "Others",
     ];
 
+    const CollegeOptions = [
+        "Kongunadu College of Engineering and Technology(Trichy)",
+    ];
+
     const Year = [
         'Select',
         "II ",
@@ -199,7 +205,7 @@ const Registration = () => {
                             <li>Download the Sample Abstract for reference and submit your abstract in PDF format.</li>
                         </ol>
                         <>
-                            <a href="https://storage.googleapis.com/registrationform-3f9a0.appspot.com/Sample%20Abstract.pdf?Expires=1739691654&GoogleAccessId=firebase-adminsdk-wdi5h%40registrationform-3f9a0.iam.gserviceaccount.com&Signature=asMJlo7%2B9yCoYvR4aKBAnjXPN7TOU5wEmVx3y74jKcuCIiSIEprmswk8QSXaC6olBBfi9jhn%2FDn1PQPdLzI1rEOSZOb3Hq7WVGaN0CPYyR3cQiK%2B7yn7WHgNPeQdSp3r6AFeLDLPU2H7vi9qTyX2ln3feQX2hwTQlOVLNB3OV4f1ebdj1lybXFP4uBvsiwcOHaKet8RBNJ5%2B%2BkLK2enZ2YSD3QMpZ9Q8CC2IhTN3JjBMFjUh8PStXnwysqAyAlb4wYUvkl1JgqtMTqI0r%2BRPJe2WMFR0DDUIFCWeCTKQrdeDLqadwUXsixG0gFFH06MWDtJ%2FX%2BSy3bY9bILHCvdDAQ%3D%3D">
+                            <a href="https://storage.googleapis.com/registrationform-3f9a0.appspot.com/Sample%20Abstract.pdf?Expires=1739691654&GoogleAccessId=firebase-adminsdk-wdi5h%40registrationform-3f9a0.iam.gserviceaccount.com&Signature=asMJlo7%2B9yCoYvR4aKBAnjXPN7TOU5wEmVx3y74jKcuCIiSIEprmswk8QSXaC6olBBfi9jhn%2FDn1PQPdLzI1rEOSZOb3Hq7WVGaN0CPYyR3cQiK%2B7yn7WHgNPeQdSp3r6AFeLDLPU2H7vi9qTyX2ln3feQX2hwTQlOVLNB3OV4f1ebdj1lybXFP4uBvsiwcOHaKet8RBNJ5%2B%2BkLK2enZ2YSD3QMpZ9Q8CC2IhTN3JjBMFjUh8PStXnwysqAyAlb4wYUvkl1JgqtMTqI0r%2BRPJe2WMFR0DDUIFCWeCTKQrdeDLqadwUXsixG0gFFH 06MWDtJ%2FX%2BSy3bY9bILHCvdDAQ%3D%3D">
                                 Download Here <img src={Document} alt='document' />
                             </a>
                         </>
@@ -421,6 +427,15 @@ const Registration = () => {
                                     <Select name="Theme" value={formData.Theme} onChange={handleChange}>
                                         <option value="">Select Theme</option>
                                         {ThemeOptions.map(option => (
+                                            <option key={option} value={option}>{option}</option>
+                                        ))}
+                                    </Select>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label>College:</Label>
+                                    <Select name="College" value={formData.College} onChange={handleChange}>
+                                        <option value="">Select College</option>
+                                        {CollegeOptions.map(option => (
                                             <option key={option} value={option}>{option}</option>
                                         ))}
                                     </Select>
