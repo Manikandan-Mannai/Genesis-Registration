@@ -50,7 +50,7 @@ const CountUpComponent = () => {
                 <CountUpBox>
                     <img src={Theme} alt="" className='icon' />
                     <div className='text'>
-                        <CountUp end={activateCountUp ? 8 : 0} duration={5} className='title' />
+                        <CountUp end={activateCountUp ? 9 : 0} duration={5} className='title' />
                         <p>Themes</p>
                     </div>
                 </CountUpBox>

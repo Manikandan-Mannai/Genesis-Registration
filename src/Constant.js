@@ -46,11 +46,6 @@ export const ThemeData = [
         img: abstract3
     },
     {
-        id: 7,
-        Title: "Security Surveillance",
-        img: abstract4
-    },
-    {
         id: 8,
         Title: "Waste To Wealth",
         img: abstract5
