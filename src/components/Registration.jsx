@@ -71,7 +71,7 @@ const Registration = () => {
     };
 
     const uploadFileAndSubmit = async () => {
-        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme','College'];
+        const requiredFields = ['TLName', 'TLDepartment', 'TLYear', 'TLDOB', 'TLNumber', 'TLEmail', 'TLRegisterNumber', 'TLHostelDays', 'M1Name', 'M1Department', 'M1RegisterNumber', 'M1Year', 'M1DOB', 'M1HostelDays', 'M2Name', 'M2RegisterNumber', 'M2Department', 'M2Year', 'M2DOB', 'M2HostelDays', 'TeamName', 'Title', 'Theme', 'College'];
         const emptyFields = requiredFields.filter(field => !formData[field]);
 
         if (emptyFields.length > 0) {
@@ -197,7 +197,7 @@ const Registration = () => {
                     <GuidelineBox>
                         <ol>
                             <li>Each team must consist of 3 students.</li>
-                            <li>All the Team members must belong to the same batch, either Second Year or Third Year.</li>
+                            <li>Teams in the hackathon must comprise members from the same academic year.</li>
                             <li>A Team can have participants from different departments but within same year.</li>
                             <li>Single registration is enough for the entire team.</li>
                             <li>Same team can submit multiple ideas and member of a team should not be in any other team.</li>
@@ -218,11 +218,11 @@ const Registration = () => {
                             <InputGroup>
 
                                 <FormGroup>
-                                    <Label>Name:</Label>
+                                    <Label>Name</Label>
                                     <Input type="text" name="TLName" value={formData.TLName} onChange={handleChange} />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>Department:</Label>
+                                    <Label>Department</Label>
                                     <Select name="TLDepartment" value={formData.TLDepartment} onChange={handleChange}>
                                         {DepartmentOptions.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -230,7 +230,7 @@ const Registration = () => {
                                     </Select>
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>Year:</Label>
+                                    <Label>Year</Label>
                                     <Select type="text" name="TLYear" value={formData.TLYear} onChange={handleChange}>
                                         {Year.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -239,22 +239,22 @@ const Registration = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>DOB:</Label>
+                                    <Label>DOB</Label>
                                     <Input type="date" name="TLDOB" value={formData.TLDOB} onChange={(e) => handleDateChange(e.target.value, 'TLDOB')} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>WhatsApp Number:</Label>
+                                    <Label>WhatsApp Number</Label>
                                     <Input type="Number" name="TLNumber" value={formData.TLNumber} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Email:</Label>
+                                    <Label>Email</Label>
                                     <Input type="email" name="TLEmail" value={formData.TLEmail} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Register Number:</Label>
+                                    <Label>Register Number</Label>
                                     <Input type="number" name="TLRegisterNumber" value={formData.TLRegisterNumber} onChange={handleChange} />
                                 </FormGroup>
 
@@ -290,12 +290,12 @@ const Registration = () => {
                             <Heading>Member 1</Heading>
                             <InputGroup>
                                 <FormGroup>
-                                    <Label>Name:</Label>
+                                    <Label>Name</Label>
                                     <Input type="text" name="M1Name" value={formData.M1Name} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Department:</Label>
+                                    <Label>Department</Label>
                                     <Select name="M1Department" value={formData.M1Department} onChange={handleChange}>
                                         {DepartmentOptions.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -305,12 +305,12 @@ const Registration = () => {
 
 
                                 <FormGroup>
-                                    <Label>Register Number:</Label>
+                                    <Label>Register Number</Label>
                                     <Input type="number" name="M1RegisterNumber" value={formData.M1RegisterNumber} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Year:</Label>
+                                    <Label>Year</Label>
                                     <Select type="number" name="M1Year" value={formData.M1Year} onChange={handleChange}>
                                         {Year.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -319,7 +319,7 @@ const Registration = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>DOB:</Label>
+                                    <Label>DOB</Label>
                                     <Input type="date" name="M1DOB" value={formData.M1DOB} onChange={(e) => handleDateChange(e.target.value, 'M1DOB')} />
                                 </FormGroup>
 
@@ -354,12 +354,12 @@ const Registration = () => {
                             <Heading>Member 2</Heading>
                             <InputGroup>
                                 <FormGroup>
-                                    <Label>Name:</Label>
+                                    <Label>Name</Label>
                                     <Input type="text" name="M2Name" value={formData.M2Name} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Department:</Label>
+                                    <Label>Department</Label>
                                     <Select name="M2Department" value={formData.M2Department} onChange={handleChange}>
                                         {DepartmentOptions.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -368,12 +368,12 @@ const Registration = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Register Number:</Label>
+                                    <Label>Register Number</Label>
                                     <Input type="number" name="M2RegisterNumber" value={formData.M2RegisterNumber} onChange={handleChange} />
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>Year:</Label>
+                                    <Label>Year</Label>
                                     <Select type="number" name="M2Year" value={formData.M2Year} onChange={handleChange}>
                                         {Year.map(option => (
                                             <option key={option} value={option}>{option}</option>
@@ -382,7 +382,7 @@ const Registration = () => {
                                 </FormGroup>
 
                                 <FormGroup>
-                                    <Label>DOB:</Label>
+                                    <Label>DOB</Label>
                                     <Input type="date" name="M2DOB" value={formData.M2DOB} onChange={(e) => handleDateChange(e.target.value, 'M2DOB')} />
                                 </FormGroup>
 
@@ -419,11 +419,11 @@ const Registration = () => {
                                     <Input type="text" name="TeamName" value={formData.TeamName} onChange={handleChange} />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>Title:</Label>
+                                    <Label>Title</Label>
                                     <Input type="text" name="Title" value={formData.Title} onChange={handleChange} />
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>Theme:</Label>
+                                    <Label>Theme</Label>
                                     <Select name="Theme" value={formData.Theme} onChange={handleChange}>
                                         <option value="">Select Theme</option>
                                         {ThemeOptions.map(option => (
@@ -432,7 +432,7 @@ const Registration = () => {
                                     </Select>
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>College:</Label>
+                                    <Label>College</Label>
                                     <Select name="College" value={formData.College} onChange={handleChange}>
                                         <option value="">Select College</option>
                                         {CollegeOptions.map(option => (
@@ -441,7 +441,7 @@ const Registration = () => {
                                     </Select>
                                 </FormGroup>
                                 <FormGroup>
-                                    <Label>Abstract:</Label>
+                                    <Label>Abstract</Label>
                                     <Input type="file" name="PDF" onChange={(event) => setFileUpload(event.target.files[0])} />
                                 </FormGroup>
                             </InputGroup>
