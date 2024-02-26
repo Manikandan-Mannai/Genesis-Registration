@@ -205,7 +205,7 @@ const Registration = () => {
                             <li>Download the Sample Abstract for reference and submit your abstract in PDF format.</li>
                         </ol>
                         <>
-                            <a href="https://storage.googleapis.com/registrationform-3f9a0.appspot.com/Sample%20Abstract.pdf?Expires=1739691654&GoogleAccessId=firebase-adminsdk-wdi5h%40registrationform-3f9a0.iam.gserviceaccount.com&Signature=asMJlo7%2B9yCoYvR4aKBAnjXPN7TOU5wEmVx3y74jKcuCIiSIEprmswk8QSXaC6olBBfi9jhn%2FDn1PQPdLzI1rEOSZOb3Hq7WVGaN0CPYyR3cQiK%2B7yn7WHgNPeQdSp3r6AFeLDLPU2H7vi9qTyX2ln3feQX2hwTQlOVLNB3OV4f1ebdj1lybXFP4uBvsiwcOHaKet8RBNJ5%2B%2BkLK2enZ2YSD3QMpZ9Q8CC2IhTN3JjBMFjUh8PStXnwysqAyAlb4wYUvkl1JgqtMTqI0r%2BRPJe2WMFR0DDUIFCWeCTKQrdeDLqadwUXsixG0gFFH 06MWDtJ%2FX%2BSy3bY9bILHCvdDAQ%3D%3D">
+                            <a href="https://storage.googleapis.com/registrationform-3f9a0.appspot.com/ABSTRACT.docx?Expires=1740497358&GoogleAccessId=firebase-adminsdk-wdi5h%40registrationform-3f9a0.iam.gserviceaccount.com&Signature=IQoegdw6g7tTVf0i2f2dI6kBugDNnP%2BAasG6VYRqGwQdzre0V7FZFkBCoif9cY91VCVBAz%2FrH%2F6xHcBSReqNBZS0O7IOSsLe2rPUpCxa8OHMRddsYzddqt9wb85tOFe6o95ePqB7I9BoS5CIetXQZgUFF3RVXgkGD%2FM%2FDg%2BAFT%2F9sZAG94q4Gd07uUK%2BHuT7u7cv7AFwp4MxARn7XtIlwt9LZt8AhQ1LDSeOJIBw1aeDPZkSD4aHV7ZOS%2BFuU%2Fh0YUv1kdtOUHt8RsehrcQ9WCjf%2FzF2NEl5q87StKuvH4BaB4RBJv2Z9ZSYtSA0FIyV6MvCfMwQ%2B77qXgNvNrhMaw%3D%3D ">
                                 Download Here <img src={Document} alt='document' />
                             </a>
                         </>
