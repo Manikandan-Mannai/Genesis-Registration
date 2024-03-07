@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import One from '../assets/Numbers/one.svg';
 import Two from '../assets/Numbers/two.svg';
 import Three from '../assets/Numbers/three.svg';
-import Four from '../assets/Numbers/four.svg';
+// import Four from '../assets/Numbers/four.svg';
 import Arrow from '../assets/Numbers/arrow.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

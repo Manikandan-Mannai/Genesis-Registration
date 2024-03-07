@@ -4,6 +4,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import styled from 'styled-components';
 import LoadingOverlay from './LoadingOverlay';
 import Document from '../assets/Gifs/doc.gif';
+import { v4 as uuidv4 } from 'uuid';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -89,7 +90,9 @@ const Registration = () => {
             return;
         }
 
-        const fileName = `${formData.TLName} - ${formData.TLYear}.pdf`;
+        const uuid = uuidv4(); // Generate a UUID
+        const fileName = `${formData.TLName} - ${formData.TLYear} - ${uuid}.pdf`; // Append UUID to the file name
+
 
         const pdfRef = ref(storage, `Abstracts/${fileName}`);
 
